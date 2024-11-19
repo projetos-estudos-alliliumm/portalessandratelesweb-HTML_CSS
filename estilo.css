@@ -1,0 +1,321 @@
+*{
+    margin:auto;
+    /* width:100%; */
+}
+
+a {  
+    text-decoration: none;
+    color: inherit; 
+}
+
+.container {
+    margin-left: 20%;
+}
+
+.sidebar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:20%;
+    height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 90vh 10vh; 
+    gab: 0;
+    z-index: 100;
+}
+
+nav {
+    background-color: #3c0917;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 22vh 2vh 10vh 10vh; 
+}
+
+nav > span {
+    font-size: 25px;
+}
+
+nav > .social-links {
+    font-size: 19px;
+}
+
+.social-links > a{
+
+}
+
+nav > ul {
+    font-size: 19px;
+    list-style-type: none; 
+    text-align: left;
+    height:100%;
+    width:100%;
+    padding: 0;
+}
+
+.link-a{
+    width:100%;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.link-a > a{
+    margin: 70px;
+}
+
+.link-a:hover{
+    /* padding: 10px; */
+    background-color: #1a0309;
+}
+
+.link-clicado{
+    width: 100%;
+    background-color: #1a0309;
+}
+
+
+#foto-perfil > img{
+    width: 170px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    border: 10px solid pink;
+    border-radius: 100px;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    /* border-color: 1px solid black; */
+    background-color: #3c0917;
+    color:white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#inicio{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 90vh 10vh; 
+}
+
+#inicio > header { 
+    background-color:black;
+    font-size: 28px
+}
+
+#arraste {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+#arraste:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.header-cont{
+    background-color: pink;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    justify-content: flex-start;
+}
+
+.header-cont> h2{
+    padding-left: 50px;
+}
+
+.section-cont > div{
+    padding: 50px;
+    text-align: justify;
+    background: white;
+}
+
+.sobre > p {
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.formacao {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    gap:20px;
+}
+
+.formacao > div {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%;
+}
+
+.formacao > div > h3 {
+    margin: 0;
+    padding: 10px; 
+    flex-grow: 1; 
+}
+
+.cv-item {
+    padding: 0 0 20px 20px;
+    border-left: 2px solid #3c0917;
+    position: relative; 
+    flex-grow: 6;
+}
+
+.cv-item h4 {
+    line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-transform: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+}
+
+.cv-item h5 {
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cv-item::before {
+    content: ""; /* Conter algum código e afins */
+    position: absolute; /* Fixo e por cima de qualquer coisa */
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #3c0917;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.portfolio {
+    display:grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto;
+    gap:10%;
+}
+
+.portfolio > div {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%;
+}
+
+.portfolio img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.portfolio .card{
+    border:1px solid black;
+    border-radius: 20px;
+}
+
+.card .card-body{
+    padding: 30px
+}
+
+.card-body h3{
+    line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-transform: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+}
+
+.card-link {
+    padding: 20px 0 0 0 ;
+    display: flex; /* Habilita o uso de Flexbox */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 10px; /* Adiciona um espaço entre os links */
+}
+
+.card-link a {
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contato {
+    max-width: 600px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.header-form,.content-form {
+    display: flex; 
+    flex-wrap: wrap; /* Permite que os campos sejam quebrados em linhas separadas */
+    gap: 20px; 
+}
+
+.col-form-6 {
+    flex: 1; /* Os campos ocupam igualmente o espaço disponível */
+    padding: 10px; /* Preenchimento externo */
+}
+
+.col-form-12 {
+    flex: 1; /* Os campos ocupam igualmente o espaço disponível */
+    padding: 10px; /* Preenchimento externo */
+}
+
+.form-label {
+    display: block; /* Garante que os rótulos ocupem toda a largura */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+    font-weight: bold; /* Deixa o texto do rótulo em negrito */
+}
+
+.form-control {
+    width: 100%; /* Campos ocupam toda a largura disponível */
+    padding: 10px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Bordas cinza */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: border-color 0.3s ease; /* Transição suave para a borda */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Muda a cor da borda quando focado */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Preenchimento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
